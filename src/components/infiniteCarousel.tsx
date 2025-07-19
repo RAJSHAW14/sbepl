@@ -3,6 +3,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import {
     Carousel,
+    CarouselApi,
     CarouselContent,
     CarouselItem,
     CarouselNext,
@@ -21,7 +22,7 @@ const items = [
 ];
 
 export function InfiniteCarousel() {
-    const [api, setApi] = React.useState<any>();
+    const [api, setApi] = React.useState<CarouselApi>();
     const [current, setCurrent] = React.useState(0);
 
     React.useEffect(() => {
